@@ -1,0 +1,19 @@
+<ion-view view-title="漫展">
+	<ion-nav-buttons side="left">
+		<ion-nav-button>
+			<i class="icon ion-ios-arrow-left" ng-click="back()"></i>
+		</ion-nav-button>
+	</ion-nav-buttons>
+	<div class="tabs-top">
+		<div class="tabs">
+			<a class="tab-item" ng-class="{check:red1}" ng-click="check1()" ui-sref="manzhan.draw">
+				漫展
+			</a>
+			<a class="tab-item" ng-class="{check:red2}" ng-click="check2()" ui-sref="manzhan.around">
+				周边
+			</a>
+		</div>
+	</div>
+	<div ui-view='draw'></div>
+	<div ui-view='around'></div>
+</ion-view>

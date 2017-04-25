@@ -1,0 +1,27 @@
+<ion-view view-title="原创">
+	<ion-nav-buttons side="left">
+		<ion-nav-button>
+			<i class="icon ion-ios-arrow-left" ng-click="back()"></i>
+		</ion-nav-button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="right">
+		<a href="#" class="button button-clear">
+			<i class="icon ion-ios-home-outline"></i>
+		</a>
+		<a ng-click="share()" href="" class="button button-clear">
+			<i class="icon ion-ios-redo-outline"></i>
+		</a>
+	</ion-nav-buttons>
+	<div class="tabs-striped tabs-top tabs-color-assertive">
+		<div class="tabs">
+			<a class="tab-item" ui-sref="zi.mulu">
+				目录
+			</a>
+			<a class="tab-item" ui-sref="zi.pingjia">
+				评价
+			</a>
+		</div>
+	</div>
+	<div ui-view='mulu'></div>
+	<div ui-view='pingjia'></div>
+</ion-view>

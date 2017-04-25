@@ -1,0 +1,355 @@
+* {
+	box-sizing: border-box;
+}
+
+ul,
+li,
+p,
+div {
+	margin: 0;
+	padding: 0;
+}
+
+.ion-ios-arrow-left {
+	font-size: 30px;
+	position: relative;
+	top: 3px;
+	left: 10px;
+}
+
+#logo {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	z-index: 100;
+	margin: 5px 0 0 5px;
+}
+
+#title {
+	display: inline-block;
+	width: 54px;
+	height: 20px;
+	z-index: 100;
+	margin: 7px 0 0 5px;
+}
+
+.slider {
+	width: 100%;
+	height: 28vh;
+}
+
+.slider-slides {
+	text-align: center;
+}
+
+.img {
+	width: 100%;
+	height: 100%;
+}
+
+.tabs {
+	position: relative;
+	top: 0px;
+}
+
+.home-ul {
+	padding: 5px;
+	list-style: none;
+}
+
+.home-ul li {
+	display: inline-block;
+	width: 50%;
+	height: 15rem;
+	padding: 10px 5px 10px;
+}
+
+.home-ul li img {
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+}
+
+.home-ul li div {
+	color: #333;
+	font-size: 0.7rem;
+	padding: 7px 5px;
+}
+
+
+/*my*/
+
+.hhh {
+	background: #f4f4f4;
+	position: relative;
+	top: 44px;
+}
+
+.login {
+	width: 100%;
+	height: 5.4rem;
+	background: #fff;
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding: 15px;
+}
+
+.login img {
+	float: left;
+	width: 3.6rem;
+	height: 3.6rem;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+
+.login p {
+	padding-left: 5px;
+	display: inline-block;
+	line-height: 4rem;
+}
+
+.item {
+	height: 40px;
+	font-size: 0.8rem;
+}
+
+.item i {
+	font-size: 20px !important;
+}
+
+.item i:nth-of-type(1) {
+	color: red;
+}
+
+.item i:nth-of-type(2) {
+	color: #999;
+}
+
+.item span {
+	position: relative;
+	top: -5px;
+}
+
+.bar .title {
+	font-size: 15px;
+}
+
+
+/*评价*/
+
+.ping {
+	position: relative;
+	top: 44px;
+}
+
+.xiq {
+	top: 0px;
+}
+
+.ping .cont {
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #dbd9dc;
+	padding: 0.7rem;
+}
+
+.ping .top {
+	height: 3rem;
+	overflow: hidden;
+}
+
+.ping .l {
+	float: left;
+	width: 11%;
+}
+
+.ping .l img {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	display: block;
+}
+
+.ping .r {
+	float: left;
+	margin-left: 1.2rem;
+	font-size: 0.7rem;
+}
+
+.r .name {
+	color: #666;
+	margin-bottom: -4px;
+}
+
+.r .date {
+	color: #999;
+}
+
+.ping .content {
+	margin-left: 3rem;
+	color: #333;
+	font-size: 0.8rem;
+}
+
+.ping .last {
+	float: right;
+	color: #999;
+	font-size: 0.7rem;
+}
+
+.ping span:nth-of-type(1) {
+	margin-right: 10px;
+}
+
+.mul {
+	position: relative;
+	top: 44px;
+}
+
+.mul .row {
+	margin: 10px 0px;
+}
+
+.mul .col {
+	background-color: #F9FAFB;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	text-align: center;
+}
+
+.mul .col {
+	margin: 0px 5px;
+}
+
+
+/*收藏*/
+
+.shouc-section p:nth-of-type(2) button {
+	color: #fff;
+	background-color: #e7370c;
+	border-radius: 5px;
+	border: none;
+	padding: 5px 25px;
+	font-size: 0.7rem;
+}
+
+.shouc-section img {
+	width: 30%;
+	height: 30%;
+}
+
+.shouc-section p:nth-of-type(1) {
+	font-size: 0.7rem;
+}
+
+.shouc-section p:nth-of-type(2) {
+	margin: 5px;
+}
+
+
+/*历史*/
+
+.history {
+	margin: 10px;
+}
+
+.history .h {
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.history .h a {
+	float: right;
+	margin: 0px 2px;
+	padding: 0px 10px;
+}
+
+.mm {
+	margin-top: 10px;
+	width: calc(100% / 3);
+	display: inline-block;
+	padding: 5px;
+	height: 6.8rem;
+	overflow: hidden;
+	text-align: center;
+}
+
+.mm img {
+	display: block;
+	width: 100%;
+	height: 5rem;
+	border-radius: 8px;
+}
+
+.mm p {
+	font-size: 0.7rem;
+	margin-top: 5px;
+}
+
+.de-img {
+	width: 50%;
+	height: 150px;
+	margin: 0 auto;
+}
+.de-img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 3rem;
+}
+/*漫展*/
+.draw div:nth-of-type(1){
+	width:100%;
+	height:5rem;
+}
+.draw div:nth-of-type(1) img{
+	width: 100%;
+	height: 100%;
+}
+.content-draw{
+	width:100%;
+	overflow:hidden;
+}
+.lef p{
+	line-height:1.5rem;
+}
+.lef .name{
+	font-size:1rem;
+	color:#ef473a;
+	width:65%;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis !important;
+}
+.rig{
+	height:3rem;
+	float:right;
+	
+}
+.rig p {
+	text-align: center;
+}
+.rig button{
+	color:orangered;
+	font-size:1rem;
+	border:1px solid orangered;
+	padding:5px 10px;
+	border-radius:16px;
+	background:none;
+}
+.lef .city{
+	color:#666;
+	font-size:0.8rem;
+}
+.lef .date{
+	color:#333;
+	font-size:0.8rem;
+}
+
+
+.check{
+	color:red;
+	border-bottom:1px solid red;
+}

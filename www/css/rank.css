@@ -1,0 +1,46 @@
+#rank .item{
+	padding:0;
+	border: none;
+	height: 250px;
+	background-color:#444444;
+	margin-bottom:10px;	
+	/*列表选项和外层容器的间隙*/
+	padding:0 10px;
+}
+ #rank .item>div{
+	height: 250px;
+	background-size:100% 100%;
+	border-radius: 12px;
+	position: relative;
+	box-shadow: 0px -5px 80px black inset;
+}
+#rank main{
+	padding:10px 0;
+	background-color: white;
+}
+#recommend{
+	position: absolute;
+	bottom:10px;
+	left:10px;
+	right:10px;
+}
+#recommend div p{
+	color:white;
+}
+#recommend div:nth-child(1){
+	overflow: hidden;
+}
+#recommend div:nth-child(1) p{
+	float:left;
+	font-size: 18px;
+	width:70%;
+	white-space: nowrap;
+	color:#e7370c;
+	font-weight: bold;
+}
+#recommend div:nth-child(2){
+	color: #E0DD8C;
+	font-size: 15px;
+	width:70%;
+	white-space: nowrap;
+}

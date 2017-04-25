@@ -1,0 +1,25 @@
+<ion-view view-title="书单">
+	<ion-nav-buttons side="left">
+		<ion-nav-button>
+			<i class="icon ion-ios-arrow-left" ng-click="back()"></i>
+		</ion-nav-button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="right">
+		<a href="#/search" class="button button-clear">
+			<i class="icon ion-ios-search"></i>
+		</a>
+	</ion-nav-buttons>
+	<ion-content style="background:#f4f4f4;">
+		<ion-slide-box auto-play="true" slide-interval="4000" does-continue="true">
+			<ion-slide ng-repeat="attr in books">
+				<img ng-src="{{attr.imageurl}}" class="img" />
+			</ion-slide>
+		</ion-slide-box>
+		<ul class="book-ul">
+			<li ng-repeat="list in booklists" ui-sref="bookzi({id:list.specialid,name:list.name})">
+				<img ng-src="{{list.coverurl}}" alt="" />
+				<div>{{list.name}}</div>
+			</li>
+		</ul>
+	</ion-content>
+</ion-view>

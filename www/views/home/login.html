@@ -1,0 +1,35 @@
+<ion-view view-title="登录">
+	<ion-nav-buttons side="left">
+		<ion-nav-button>
+			<i class="icon ion-ios-arrow-left" ng-click="back()"></i>
+		</ion-nav-button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side='right'>
+		<button class="button button-clear" ui-sref="zhuce">
+		   注册
+		</button>
+	</ion-nav-buttons>
+	<ion-content>
+		<div style="width:100%;height:220px;">
+			<div class="de-img">
+				<img src="../../img/denglu.png">
+			</div>
+		</div>
+
+		<div class="content has-header">
+	      <div class="list">
+	        <label class="item item-input">
+	          <span>用户名：</span>
+	          <input type="text">
+	        </label>
+	        <label class="item item-input">
+	          <span>密码：</span>
+	          <input type="password">
+	        </label>
+	      </div>
+	      <div class="padding">
+	        <button class="button button-block button-assertive">登录</button>
+	      </div>
+	    </div>
+	</ion-content>
+</ion-view>

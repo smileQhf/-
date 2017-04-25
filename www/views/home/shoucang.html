@@ -1,0 +1,19 @@
+<ion-view view-title="">
+	<ion-nav-buttons side="left">
+		<ion-nav-button>
+			<i class="icon ion-ios-arrow-left" ng-click="back()"></i>
+		</ion-nav-button>
+	</ion-nav-buttons>
+	<div class="tabs-top">
+		<div class="tabs">
+			<a class="tab-item" ui-sref="shoucang.shou" ng-class="{check:red1}" ng-click="check1()">
+				收藏
+			</a>
+			<a class="tab-item" ui-sref="shoucang.history" ng-class="{check:red2}" ng-click="check2()">
+				历史
+			</a>
+		</div>
+	</div>
+	<div ui-view="shou"></div>
+	<div ui-view="history"></div>
+</ion-view>

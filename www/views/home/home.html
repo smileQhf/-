@@ -1,0 +1,49 @@
+<ion-view view-title="">
+	<ion-nav-buttons side="left">
+		<img src="../../img/logo.png" id="logo">
+		<img src="../../img/index.png" alt="" id="title">
+	</ion-nav-buttons>
+	<ion-nav-buttons side="right">
+		<a href="#/search" class="button button-clear">
+			<i class="icon ion-ios-search"></i>
+		</a>
+		<a href="#/my" class="button button-clear">
+			<i class="icon ion-social-github"></i>
+		</a>
+	</ion-nav-buttons>
+
+	<ion-content>
+		<!--{{attrs}}-->
+		<ion-slide-box auto-play="true" slide-interval="4000" 
+			does-continue="true" class="lun">
+			<ion-slide ng-repeat="attr in attrs">
+				<img ng-src="{{attr.imageurl}}" class="img" />
+			</ion-slide>
+		</ion-slide-box>
+		<div class="tabs-icon-top tabs-light">
+			<div class="tabs">
+				<a class="tab-item" href="#/feilei">
+					<i class="icon ion-home"></i> 分类
+				</a>
+				<a class="tab-item" href="#/rank">
+					<i class="icon ion-star"></i> 排行
+				</a>
+				<a class="tab-item" href="#/original">
+					<i class="icon ion-ios-color-filter"></i> 原创
+				</a>
+				<a class="tab-item" href="#/book">
+					<i class="icon ion-ios-bookmarks"></i> 书单
+				</a>
+				<a class="tab-item" href="#/manzhan">
+					<i class="icon ion-disc"></i> 漫圈
+				</a>
+			</div>
+		</div>
+		<ul class="home-ul">
+			<li ng-repeat="list in lists" ui-sref="zi({id:list.targetargument})">
+				<img ng-src="{{list.imageurl}}" alt="" />
+				<div>{{list.description}}</div>
+			</li>
+		</ul>
+	</ion-content>
+</ion-view>

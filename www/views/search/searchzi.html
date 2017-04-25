@@ -1,0 +1,20 @@
+<ion-view view-title="{{name}}">
+	<ion-nav-buttons side="left">
+		<ion-nav-button>
+			<i class="icon ion-ios-arrow-left" ng-click="back()"></i>
+		</ion-nav-button>
+	</ion-nav-buttons>
+	<ion-content>
+		<section ng-repeat="searchzi in bookers" class="section">
+			<!--{{searchzi}}-->
+			<div class="le">
+				<img src="{{searchzi.coverurl}}" alt="" />
+			</div>
+			<div class="ri">
+				<p class="first">{{searchzi.name}}</p>
+				<p class="two">作者：{{searchzi.author}}</p>
+				<p class="three">更新：{{searchzi.lastpartname}}</p>
+			</div>
+		</section>
+	</ion-content>
+</ion-view>

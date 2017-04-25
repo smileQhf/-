@@ -1,0 +1,20 @@
+<ion-content style="margin-top:44px;background:#f4f4f4;">
+<div style="padding:0px 10px;">
+	<!--{{draws}}-->
+	<section ng-repeat="draw in draws" class="draw" style="background:white;margin-bottom:10px;">
+		<!--{{draw}}-->
+		<div><img ng-src="http://oss.hmpiaowu.com/{{draw.newThumb}}" /></div>
+		<div class="content-draw">
+			<div class="lef">
+				<p class="name">{{draw.title}}</p>
+				<p class="city">【{{draw.city}}】{{draw.stadium}}</p>
+				<p class="date">{{draw.showTime}}</p>
+			</div>
+			<div class="rig">
+				<p><button>门票热卖中</button></p>
+			</div>
+		</div>
+	</section>
+</div>	
+<ion-infinite-scroll on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+</ion-content>

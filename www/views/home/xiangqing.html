@@ -1,0 +1,26 @@
+<ion-view view-title="评论详情">
+	<ion-nav-buttons side="left">
+		<ion-nav-button>
+			<i class="icon ion-ios-arrow-left" ng-click="back()"></i>
+		</ion-nav-button>
+	</ion-nav-buttons>
+	<ion-content>
+		<div class="xiq ping">
+			<div ng-repeat="lun in xiangqs" class="cont" ui-sref="xiangqing">
+				<div class="top">
+					<div class="l">
+						<img src="{{lun.profileimageurl}}" alt="" />
+					</div>
+					<div class="r">
+						<p class="name">{{lun.screenname}}</p>
+						<p class="date">{{lun.createtime}}</p>
+					</div>
+				</div>
+				<p class="content">{{lun.content}}</p>
+				<p class="last">
+					<span><i class="icon ion-ios-heart-outline"></i> {{lun.praisecount}}</span>
+				</p>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

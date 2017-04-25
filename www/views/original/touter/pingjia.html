@@ -1,0 +1,22 @@
+<div class="ping">
+	<ion-scroll zooming="true" direction="xy" style="height: 500px">
+		<div ng-repeat="lun in luns" class="cont" ui-sref="xiangqing">
+			<!--{{lun}}-->
+			<div class="top">
+				<div class="l">
+					<img src="{{lun.profileimageurl}}" alt="" />
+				</div>
+				<div class="r">
+					<p class="name">{{lun.screenname}}</p>
+					<p class="date">{{lun.createtime}}</p>
+				</div>
+			</div>
+			<p class="content">{{lun.content}}</p>
+			<p class="last">
+				<span><i class="icon ion-ios-chatboxes-outline"></i> {{lun.replycount}}</span>
+				<span><i class="icon ion-ios-heart-outline"></i> {{lun.praisecount}}</span>
+			</p>
+		</div>
+	</ion-scroll>
+
+</div>

@@ -1,0 +1,27 @@
+<ion-view view-title="{{name}}">
+	<ion-nav-buttons side="left">
+		<ion-nav-button>
+			<i class="icon ion-ios-arrow-left" ng-click="back()"></i>
+		</ion-nav-button>
+	</ion-nav-buttons>
+	<ion-content class="brcontent">
+		<section ng-repeat="booker in bookers">
+			<div class="brimg">
+				<img src="{{booker.coverurl}}" alt="" />
+			</div>
+			<div class="brp">
+				<span>简介</span> {{booker.description}}
+			</div>
+		</section>
+		<section class="tuijian">
+			<p>热门推荐</p>
+			<!--{{tuijians}}-->
+			<ul>
+				<li ng-repeat="tuiji in tuijians">
+					<img ng-src="{{tuiji.imageurl}}" alt="" />
+					<p>{{tuiji.name}}</p>
+				</li>
+			</ul>
+		</section>
+	</ion-content>
+</ion-view>

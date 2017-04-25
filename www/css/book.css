@@ -1,0 +1,82 @@
+ul,li,p,div,section{
+	margin: 0;
+	padding:0;
+}
+.book-ul{
+	padding:5px 0px 5px 3px;
+	list-style: none;
+}
+.book-ul li{
+	background:white;
+	display:inline-block;
+	width:46.6%;
+	margin:5px;
+	border-radius:6px;
+	border:1px solid #ccc;
+}
+.book-ul li img{
+	width:100%;
+	height:100%;
+	border-top-right-radius:6px;
+	border-top-left-radius: 6px;
+}
+.book-ul li div{
+	width:100%;
+	height:20px;
+	overflow: hidden;
+	color:#333;
+	font-size:0.7rem;
+	padding:0px 6px;
+}
+.zi{
+	height:10rem;
+}
+.brcontent{
+	background: #f4f4f4;
+}
+.brimg img{
+	width:100%;
+	height:100%;
+	display:block;
+}
+.brp span{
+	background:#ff7cad;
+	color:white;
+	padding:1px 4px;
+	border-radius:40px;
+	font-size:0.48rem;
+}
+.brp{
+	background:white;
+	padding:5px 10px;
+	font-size:0.7rem;
+	color:#666;
+	line-height:1rem;
+}
+.tuijian{
+	background:white;
+	margin-top:10px;
+	padding:10px;
+}
+.tuijian ul p{
+	font-size:0.7rem;
+	margin-top:10px;
+}
+.tuijian ul{
+	list-style: none;
+	overflow: hidden;
+}
+.tuijian ul li{
+	display:inline-block;
+	width:calc(100% / 3);
+	float: left;
+	text-align: center;
+	padding:4px;
+	height:10rem;
+}
+.tuijian li img{
+	display:block;
+	width:100%;
+	height:8rem;
+	border-radius:6px;
+}

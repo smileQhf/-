@@ -1,0 +1,33 @@
+<ion-view view-title="排行榜" id='rank'>
+	<ion-nav-buttons side="left">
+		<ion-nav-button>
+			<i class="icon ion-ios-arrow-left" ng-click="back()"></i>
+		</ion-nav-button>
+	</ion-nav-buttons>
+	<ion-nav-buttons side="right">
+		<a href="#/search" class="button button-clear">
+			<i class="icon ion-ios-search"></i>
+		</a>
+	</ion-nav-buttons>
+	<ion-content>
+		<!--{{ranks}}-->
+		<main>
+			<ion-list>
+				<ion-item ng-repeat='recommend in recommends'>
+					<div ng-style="{'background-image':'url(http://oss.hmpiaowu.com/{{recommend.newThumb}})'}">
+						<section id='recommend'>
+							<div>
+								<p>{{recommend.title}}</p>
+							</div>
+							<div>
+								<p>{{recommend.showTime}}</p>
+							</div>
+						</section>
+					</div>
+				</ion-item>
+			</ion-list>
+			<ion-infinite-scroll on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+		</main>
+	</ion-content>
+
+</ion-view>

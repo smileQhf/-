@@ -1,0 +1,16 @@
+<div class="shou" style="margin-top:55px;">
+	<section style="text-align: center;" class="shouc-section">
+		<p>登录就可以查看收藏过的漫画啦~</p>
+		<p><button>登录</button></p>
+		<img src="../../../img/shou.png" alt="" />
+	</section>
+	<section class="tuijian">
+		<p>热门推荐</p>
+		<ul>
+			<li ng-repeat="tuiji in tuijians">
+				<img ng-src="{{tuiji.imageurl}}" alt="" />
+				<p>{{tuiji.name}}</p>
+			</li>
+		</ul>
+	</section>
+</div>

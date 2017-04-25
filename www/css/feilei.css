@@ -1,0 +1,24 @@
+ul,li,p{
+	margin: 0;
+	padding: 0;
+}
+.fen-ul{
+	width:100%;
+	list-style: none;
+	padding:0px 10px;
+}
+.fen-ul li{
+	width:calc(100% / 3);
+	height:6.4rem;
+	display:inline-block;
+	text-align: center;
+	padding:20px;
+}
+.fen-ul li img{
+	width:100%;
+	height:100%;
+}
+.fen-ul p{
+	color: #353535;
+	font-size:0.7rem;
+}
